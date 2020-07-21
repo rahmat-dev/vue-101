@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <h1>Justify Team</h1>
+      <ul>
+        <li v-for="name in names" v-text="name"></li>
+      </ul>
+
+      <input type="text" v-model="newMemberName" />
+      <button v-on:click="addNewMember">Add member</button>
+    </div>
+
+    <br />
+
+    <div id="counter">
+      <button
+        v-on:click="decrementCount"
+        class="btn-counter"
+        :disabled="count === 0"
+      >
+        -
+      </button>
+      <span v-text="count"></span>
+      <button
+        v-on:click="incrementCount"
+        class="btn-counter"
+        :disabled="count === 99999"
+      >
+        +
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

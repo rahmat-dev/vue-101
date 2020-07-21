@@ -1,0 +1,32 @@
+.btn-counter {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(88, 121, 214);
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.btn-counter:disabled {
+  background-color: rgba(88, 121, 214, 0.5);
+}
+
+.btn-counter:focus {
+  outline: none;
+}
+
+.btn-counter:active {
+  background-color: rgba(88, 121, 214, 0.8);
+}
+
+span {
+  display: inline-block;
+  width: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5879d6;
+  text-align: center;
+  margin: 0 8px;
+}
